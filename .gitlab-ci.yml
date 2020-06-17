@@ -1,0 +1,15 @@
+image: python:3.8-slim
+
+pages:
+  stage: deploy
+  script:
+  - pwd
+  - apt-get update && apt-get install gcc -y && apt-get clean
+  - pip install -r requirements.txt
+  - sphinx-build -b html docs/writeup public
+
+  artifacts:
+    paths:
+    - public
+  only:
+  - master

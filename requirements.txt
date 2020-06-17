@@ -1,0 +1,10 @@
+flake8
+m2r
+nbformat
+numpy
+pandas
+pytest
+pytest-cookies
+pytest-cov
+sphinx
+sphinx_rtd_theme
